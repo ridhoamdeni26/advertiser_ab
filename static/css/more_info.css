@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+.class_moreinfo {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@keyframes top {
+  from {
+    transform: translate(0rem, 0);
+  }
+
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+
+@keyframes bottom {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+
+.btn_moreinfo {
+  position: relative;
+  /* letter-spacing: 0.15em; */
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  color: #111111;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+
+.btn_moreinfo::after,
+.btn_moreinfo::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+}
+
+.btn_moreinfo::before {
+  background-color: #d3d4e3;
+  top: -0.75rem;
+  left: 0.5rem;
+  animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+
+.btn_moreinfo::after {
+  background-color: #6bd049;
+  top: 3rem;
+  left: 13rem;
+  animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+
+.btn_moreinfo:hover {
+  color: white;
+}
+
+.btn_moreinfo:hover::before,
+.btn_moreinfo:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  animation: none;
+}
+
+.btn_moreinfo:hover::after {
+  left: 0rem;
+}
+
+.btn_moreinfo:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}
+
+.container_hoverme {
+  padding-top: 0px;
+}
+
+/*# sourceMappingURL=more_info.css.map */
