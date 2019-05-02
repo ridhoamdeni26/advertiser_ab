@@ -31,7 +31,7 @@ h6 {
 }
 
 a {
-  color: #BE1414;
+  color: #89c342;
   -webkit-transition: color 400ms, background-color 400ms;
   -moz-transition: color 400ms, background-color 400ms;
   -o-transition: color 400ms, background-color 400ms;
@@ -41,7 +41,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #A00303;
+  color: #89c342;
 }
 
 hr {
@@ -218,7 +218,7 @@ ul.nostyle i {
 #main-menu.navbar-default .navbar-nav>li:hover>a {
   background: transparent;
   padding-top: 37px;
-  border-top: 3px solid #BE1414;
+  border-top: 3px solid #89c342;
 }
 
 @media only screen and (min-width: 768px) {
@@ -238,7 +238,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav>li:hover>a {
     background: transparent;
     padding-top: 37px;
-    border-top: 3px solid #BE1414;
+    border-top: 3px solid #89c342;
   }
 
   #main-menu.navbar-default .dropdown-menu {
@@ -279,7 +279,7 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu>li.active>a,
   #main-menu.navbar-default .dropdown-menu>li.open>a,
   #main-menu.navbar-default .dropdown-menu>li:hover>a {
-    color: #BE1414;
+    color: #89c342;
     background-color: transparent;
   }
 }
@@ -289,9 +289,10 @@ ul.nostyle i {
 }
 
 #main-slider .item {
+  background-image: url(../images/ab-abstract.png);
   height: 558px;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center;
   background-size: cover;
 }
 
@@ -309,7 +310,7 @@ ul.nostyle i {
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: #696969;
 }
 
 #main-slider .slider-inner h2>span {
@@ -933,11 +934,12 @@ ul.nostyle i {
 }
 
 #get-in-touch {
-  padding: 100px 0 50px;
-  background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
+  padding: 0px 0 0px;
+  /* background-image: */
+  /* background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
-  color: #fff;
+  color: #fff; */
 }
 
 #get-in-touch h1,

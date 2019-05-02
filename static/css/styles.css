@@ -296,3 +296,7 @@ USE THIS FILE TO INCLUDE YOUR OWN CSS STYLES
 .dropdown-trig-sgn .dropdown-menu.triger-bounceInUp-dp {
     left: 54%;
 }
+
+#ifrm {
+    display: none !important;
+}
