@@ -29,6 +29,169 @@
     <link href="static/css/loading.css" rel="stylesheet">
     <link href="static/css/more_info.css" rel="stylesheet">
     <link href="static/css/footer.css" rel=" stylesheet">
+    <style>
+        .path {
+            stroke-dasharray: 350;
+            stroke-dashoffset: 350;
+            animation: dash 22s linear forwards infinite;
+        }
+
+        @keyframes dash {
+            0% {
+                stroke-dashoffset: 350;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .path2 {
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: dash_b 18s linear forwards infinite;
+        }
+
+        @keyframes dash_b {
+            0% {
+                stroke-dashoffset: 260;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .path3 {
+            stroke-dasharray: 180;
+            stroke-dashoffset: 180;
+            animation: dash_c 18s linear forwards infinite;
+        }
+
+        @keyframes dash_c {
+            0% {
+                stroke-dashoffset: 180;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .path4 {
+            stroke-dasharray: 280;
+            stroke-dashoffset: 280;
+            animation: dash_d 15s linear forwards infinite;
+        }
+
+        @keyframes dash_d {
+            0% {
+                stroke-dashoffset: 280;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .path5 {
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: dash_e 12s linear forwards infinite;
+        }
+
+        @keyframes dash_e {
+            0% {
+                stroke-dashoffset: 50;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .path6 {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: dash_f 10s linear forwards infinite;
+        }
+
+        @keyframes dash_f {
+            0% {
+                stroke-dashoffset: 100;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        #rt {
+            background: url(static/images/background/imac-mockup-maps.png) no-repeat;
+            background-size: cover;
+            margin-left: -180px;
+        }
+
+        @media only screen and (max-width:992px) {
+            svg#rt {
+                width: 365px;
+                height: 290px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 270px
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+            svg#rt {
+                width: 393px;
+                height: 315px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+        }
+
+        @media only screen and (max-width:480px) {
+            svg#rt {
+                width: 276px;
+                height: 220px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-bottom: -35px;
+            }
+        }
+
+        @media only screen and (max-width:320px) {
+            svg#rt {
+                width: 280px;
+                height: 225px
+            }
+        }
+
+        .st0 {
+            fill: #09D60E;
+        }
+
+        .st1 {
+            fill: #89C342;
+        }
+
+        .st2 {
+            fill: #23AEC8;
+        }
+
+        .st3 {
+            fill: #1967A3;
+        }
+
+        .st4 {
+            fill: #555160;
+        }
+    </style>
 </head>
 <!--/head-->
 
@@ -64,6 +227,7 @@
             <!--/.container-->
         </nav>
         <!--/nav-->
+        <div class="clearfix"></div>
     </header>
     <!--/header-->
 
@@ -99,9 +263,247 @@
                         side.<br>
                         we will give the best for you</p>
                 </div>
+
                 <div class="row">
                     <div class="col-sm-6 wow fadeInLeft">
-                        <img class="img-responsive" src="static/images/background/imac.png" alt="">
+                        <svg id="rt" x="0px" y="0px" width="720" height="574" viewBox="0 0 720 574">
+                            <path class="path" id="path1" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M32.96,116.2c30.91,9.74,55.7,36.82,62.68,68.47c4.54,20.61,2.24,43.28,12.67,61.63
+                                        c2.78,4.9,6.38,9.28,9.96,13.63c18.26,22.21,36.53,44.43,54.79,66.64c3.62,4.41,7.25,8.82,10.36,13.61
+                                        c7.53,11.62,11.7,25.05,15.79,38.28c1.92,6.23,3.85,12.45,5.77,18.68">
+                            </path>
+                            <path class="path2" id="path2" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.28,168.76c23.8-19.08,51.87-32.07,76.72-49.76
+                                        c1.33-0.95,2.75-2.05,3.11-3.64c0.63-2.72-2.05-4.98-4.43-6.46c-14.54-9.04-29.98-16.64-46.02-22.65
+                                        C93.78,75.44,63.14,69.83,32.4,67.11">
+                            </path>
+                            <path class="path3" id="path3" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M340.74,31.98c0.86,13.88,4.01,27.61,9.29,40.48c0.61,1.49,1.43,3.14,2.97,3.6
+                                        c1.24,0.37,2.55-0.16,3.73-0.67c30.02-13.09,60.04-26.18,90.05-39.27">
+                            </path>
+                            <path class="path4" id="path4" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M685.6,281.35c-45.83-5.69-91.65-11.39-137.48-17.08
+                                        c-1.49-0.18-3.08-0.35-4.41,0.34c-1.72,0.89-2.45,2.92-3.04,4.76c-6.33,19.9-12.16,39.96-17.48,60.15
+                                        c-5.91,22.4-11.2,45-18.59,66.96">
+                            </path>
+                            <path class="path5" id="path5" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M556.22,32.08c0.25,3.85,0.5,7.71,0.74,11.56 M613.17,81.87c-10.73-7.68-22.23-14.28-34.28-19.66
+                                        ">
+                            </path>
+                            <path class="path6" id="path6" fill="none" stroke="#89c342" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                d="M629.43,100.11c9.72,9.17,17.07,20.51,25.52,30.86c8.45,10.36,18.52,20.09,31.22,24.27">
+                            </path>
+                            <defs>
+                                <g id="car" transform="translate(0 -10)">
+                                    <g transform="matrix(0.443048 0 0 0.443048 142.579 142.579)">
+                                        <g>
+                                            <path class="st0"
+                                                d="M-286.23-308.09l-2.9-10.91c-0.25-0.95-0.86-1.57-1.53-1.57h-2.19l3.31,12.47H-286.23z" />
+                                            <path class="st0"
+                                                d="M-286.23-288.14l-3.31,0l-3.31,12.47h2.19c0.68,0,1.28-0.62,1.53-1.57L-286.23-288.14z" />
+                                        </g>
+                                        <path class="st1" d="M-274.86-288.92l1.22-4.29c0.89-3.14,0.89-6.69,0-9.83l-1.21-4.29c-1.39-4.93-4.72-7.96-8.27-7.52l-13.86,1.75
+                                            l-14.23-1.79c-3.36-0.42-6.56,2.3-8.06,6.85l-0.33,0.98c-1.86,5.62-1.86,12.23,0,17.85l0.33,0.98c1.5,4.56,4.7,7.27,8.06,6.85
+                                            l14.23-1.79l13.87,1.75C-279.58-280.96-276.25-283.99-274.86-288.92z" />
+                                        <path class="st0"
+                                            d="M-283.83-281.49c6.14-7.02,8.87-18.92,6.92-30.16c0.88,1.2,1.59,2.68,2.05,4.33l1.22,4.29
+                                            c0.89,3.14,0.89,6.69,0,9.83l-1.21,4.29c-1.39,4.93-4.72,7.96-8.27,7.52L-283.83-281.49z" />
+                                        <path class="st2"
+                                            d="M-286.41-307.77l-0.14-0.32c-0.34-0.77-0.93-1.19-1.54-1.1l-7.25,1.1v19.96l7.25,1.1
+                                            c0.61,0.09,1.2-0.33,1.54-1.1l0.14-0.31C-283.83-294.3-283.83-301.92-286.41-307.77z" />
+                                        <path class="st3" d="M-286.33-307.59c2.5,5.83,2.47,13.34-0.08,19.13l-0.14,0.32c-0.34,0.77-0.93,1.19-1.54,1.1l-5.55-0.84
+                                            C-289.51-292.66-286.87-299.78-286.33-307.59z" />
+                                        <path class="st2" d="M-306.92-308.09v19.96l-3.81,0.96c-0.69,0.17-1.38-0.33-1.72-1.25l-0.89-2.42c-1.67-4.52-1.67-10.02,0-14.54
+                                            l0.89-2.42c0.34-0.92,1.03-1.42,1.72-1.25L-306.92-308.09z" />
+                                        <path class="st3" d="M-312.46-288.43l-0.45-1.22c2.87-4.9,4.92-10.77,5.98-17.1v18.61l-3.81,0.96
+                                            C-311.43-287-312.12-287.5-312.46-288.43z" />
+                                        <g>
+                                            <polygon class="st4"
+                                                points="-282.46,-310.38 -277.49,-305.39 -278.41,-303.31 -283.38,-308.3 		" />
+                                            <polygon class="st4"
+                                                points="-278.41,-292.91 -277.49,-290.84 -282.46,-285.85 -283.38,-287.92 		" />
+                                        </g>
+                                        <path
+                                            d="M-296.17-309.22v22.21l8,1.21c0.92,0.14,1.81-0.5,2.32-1.66l0.14-0.31c2.77-6.27,2.77-14.43,0-20.7l-0.14-0.32
+                                            c-0.51-1.16-1.4-1.79-2.32-1.65L-296.17-309.22z M-287.24-307.4l0.14,0.32c2.4,5.43,2.4,12.51,0,17.94l-0.14,0.31
+                                            c-0.17,0.38-0.47,0.6-0.77,0.55l-6.51-0.98v-17.71l6.51-0.98C-287.7-308-287.41-307.78-287.24-307.4z" />
+                                        <path
+                                            d="M-306.09-287.08l0-22.07l-4.51-1.13c-1.04-0.26-2.07,0.49-2.58,1.87l-0.89,2.42c-1.82,4.89-1.82,10.86,0,15.75l0.89,2.42
+                                            c0.51,1.38,1.54,2.13,2.58,1.87L-306.09-287.08z M-311.73-289.03l-0.89-2.42c-1.54-4.14-1.54-9.19,0-13.33l0.89-2.42
+                                            c0.17-0.46,0.52-0.71,0.86-0.62l3.12,0.78v17.84l-3.12,0.78C-311.22-288.32-311.56-288.57-311.73-289.03z" />
+                                        <polygon
+                                            points="-278.41,-292.91 -277.49,-290.84 -282.46,-285.85 -283.38,-287.92 	" />
+                                        <polygon
+                                            points="-282.44,-310.4 -277.47,-305.4 -278.39,-303.33 -283.36,-308.32 	" />
+                                        <path d="M-293.53-321.27c-0.15,0.34-0.19,0.78-0.08,1.16l1.37,5.17l-4.74,0.6l-14.16-1.79c-3.71-0.48-7.23,2.51-8.87,7.54
+                                            l-0.33,0.99c-1.96,5.97-1.96,12.98,0,18.96l0.33,0.98c1.64,5.03,5.17,8.03,8.87,7.54l14.16-1.79l4.75,0.6l-1.37,5.17
+                                            c-0.17,0.64,0.03,1.37,0.46,1.62c0.1,0.06,0.2,0.09,0.31,0.09h2.19c1.02,0,1.93-0.93,2.31-2.35l1.04-3.91l4.12,0.52
+                                            c3.9,0.49,7.57-2.84,9.09-8.27l1.21-4.29c0.97-3.45,0.97-7.35,0-10.81l-1.21-4.29c-1.53-5.43-5.19-8.77-9.09-8.27l-4.12,0.52
+                                            l-1.04-3.91c-0.38-1.42-1.29-2.36-2.31-2.35h-2.19C-293.12-321.81-293.38-321.61-293.53-321.27z M-289.11-280.65l-0.79,2.96
+                                            c-0.12,0.48-0.43,0.79-0.77,0.78h-0.97l0.99-3.74H-289.11z M-275.62-306.82l1.21,4.29c0.8,2.83,0.8,6.02,0,8.85l-1.21,4.29
+                                            c-1.25,4.43-4.25,7.16-7.43,6.76l-13.93-1.75l-14.3,1.8c-3.03,0.39-5.91-2.05-7.25-6.16l-0.33-0.99c-1.73-5.27-1.73-11.46,0-16.74
+                                            l0.33-0.98c1.34-4.11,4.22-6.56,7.25-6.16l14.3,1.8l13.94-1.76C-279.87-313.99-276.87-311.26-275.62-306.82z M-290.66-319.32
+                                            c0.34,0,0.64,0.31,0.77,0.78l0.79,2.96h-1.53l-0.99-3.74H-290.66z" />
+                                    </g>
+                                </g>
+                                <g id="motor" transform="translate(0 -8)">
+                                    <path fill="#30A5A5"
+                                        d="M12.3,9.2c0-0.4,0.2-0.7,0.5-0.7l0,0c0.3,0,0.5,0.3,0.5,0.7v1.5c0,0.4-0.2,0.7-0.5,0.7l0,0c-0.3,0-0.5-0.3-0.5-0.7V9.2z">
+                                    </path>
+                                    <path fill="#30A5A5"
+                                        d="M12.3,3.6c0-0.4,0.2-0.7,0.5-0.7l0,0c0.3,0,0.5,0.3,0.5,0.7v1.5c0,0.4-0.2,0.7-0.5,0.7l0,0c-0.3,0-0.5-0.3-0.5-0.7V3.6z">
+                                    </path>
+                                    <path fill="#30A5A5"
+                                        d="M5.3,5.5c0-0.4,0.4-0.8,0.8-0.8h9.2c0.4,0,0.8,0.4,0.8,0.8v3.7c0,0.4-0.4,0.8-0.8,0.8H6.1c-0.4,0-0.8-0.4-0.8-0.8V5.5z">
+                                    </path>
+                                    <g>
+                                        <path fill="89C342"
+                                            d="M22.5,7.4H9.7l0.2-1.8l6.7-1.8c0,0,0.6-0.2,1.3,0c0.7,0.2,4.3,2.4,4.3,2.4L22.5,7.4z">
+                                        </path>
+                                        <path fill="89C342" d="M16.8,7.4V3.7c-0.1,0-0.2,0-0.2,0L9.9,5.6L9.7,7.4H16.8z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M16.9,7.4h5.6l-0.3-1.2c0,0-3.6-2.3-4.3-2.4c-0.4-0.1-0.8-0.1-1-0.1V7.4z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M17.1,3.9c0.6,0.2,1.2,0.6,1.7,0.9c1.3,0.7,2.6,1.4,3.6,2.5l-0.3-1.1c0,0-3.6-2.3-4.3-2.4c-0.7-0.2-1.3,0-1.3,0l0,0C16.8,3.8,16.9,3.9,17.1,3.9z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M22.5,7.3H9.7l0.2,1.8l6.7,1.8c0,0,0.6,0.2,1.3,0c0.7-0.2,4.3-2.4,4.3-2.4L22.5,7.3z">
+                                        </path>
+                                        <path fill="89C342" d="M16.8,7.3H9.7l0.2,1.8l6.7,1.8c0,0,0.1,0,0.2,0V7.3z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M16.9,11c0.3,0,0.6,0,1-0.1c0.7-0.2,4.3-2.4,4.3-2.4l0.3-1.2h-5.6V11z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M17.1,10.8c0.6-0.2,1.2-0.6,1.7-0.9c1.3-0.7,2.6-1.4,3.6-2.5l-0.3,1.1c0,0-3.6,2.3-4.3,2.4c-0.7,0.2-1.3,0-1.3,0l0,0C16.8,10.9,16.9,10.8,17.1,10.8z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M9.9,7.4c0-0.4-0.4-1.8,0-1.8l11.6,1c0.4,0,0.7,0.4,0.7,0.8v0.3c0,0.4-0.3,0.8-0.7,0.8l-10,1c-0.4,0-1.6-1.4-1.6-1.8V7.4z">
+                                        </path>
+                                        <path fill="89C342"
+                                            d="M9.9,7.4v0.3c0,0.4,1.2,1.8,1.6,1.8L16.2,9V6.1L9.9,5.6C9.5,5.6,9.9,7,9.9,7.4z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path fill="#3CBFC5"
+                                            d="M21.1,7.1c0-0.4,0.3-0.8,0.7-0.8h5.6c0.4,0,1.3,0.4,1.3,0.8v0.4c0,0.4-1,0.8-1.3,0.8h-5.6c-0.4,0-0.7-0.4-0.7-0.8V7.1z">
+                                        </path>
+                                        <path fill="#30A5A5"
+                                            d="M22.1,8.4h4.3V6.3h-4.3c-0.5,0-0.9,0.4-0.9,0.8v0.4C21.1,8,21.5,8.4,22.1,8.4z">
+                                        </path>
+                                        <path fill="#30A5A5"
+                                            d="M22.9,7.2c0-0.4,0.3-0.9,0.7-1L25.3,6C25.7,6,26,6.3,26,6.7V8c0,0.4-0.3,0.7-0.7,0.7l-1.7-0.2c-0.4,0-0.7-0.6-0.7-1V7.2z">
+                                        </path>
+                                        <path fill="#3CBFC5"
+                                            d="M25.1,8.7l0.2,0c0,0,0,0,0.1,0V6c0,0,0,0-0.1,0l-0.2,0V8.7z"></path>
+                                        <g>
+                                            <g>
+                                                <path fill="#3CBFC5"
+                                                    d="M20.8,7.4l2.6,0.1c0,0,0-0.9-0.3-2c-0.3-0.8-0.8-1.8-1.3-2.7l-0.4,0.3c0,0,0.5,1.7,0.1,2C21.2,5.5,20.7,6.8,20.8,7.4z">
+                                                </path>
+                                                <g>
+                                                    <path fill="#3CBFC5"
+                                                        d="M23.1,1.2c0.1,0.7,0.3,1.2,0.5,1.2c0.2,0,0.3-0.6,0.2-1.2C23.8,0.5,23.5,0,23.3,0C23.1,0,23,0.6,23.1,1.2z">
+                                                    </path>
+                                                    <g>
+                                                        <path fill="#30A5A5"
+                                                            d="M23.1,1.2C23,0.6,23.1,0,23.3,0c0,0,0,0,0,0c-0.2,0.1-0.2,0.6-0.1,1.2c0.1,0.6,0.3,1.1,0.5,1.2c0,0,0,0-0.1,0C23.4,2.4,23.2,1.9,23.1,1.2z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                                <path fill="#797A79"
+                                                    d="M23.9,1.2c0,0,0.1,0,0.1,0c0.1,0.1,0,0.2,0,0.2c0,0,0,0,0,0c0,0,0,0.1-0.1,0.4c-0.1,0.6-0.2,1.8-0.2,1.9C23.7,4,23.6,4,23.6,4l-2,0.5l0-0.1l2-0.5c0,0,0.1,0,0.1-0.2c0-0.1,0.1-1.2,0.2-1.9c0-0.2,0-0.4,0-0.4c0,0,0,0,0,0C23.9,1.4,24,1.3,23.9,1.2C23.9,1.2,23.9,1.2,23.9,1.2L23.9,1.2z">
+                                                </path>
+                                                <g>
+                                                    <path fill="#313030"
+                                                        d="M20.7,1.1c0-0.1,0-0.2,0.1-0.2l0.3-0.1c0.1,0,0.1,0,0.2,0.1l0.6,2.2c0,0.1,0,0.2-0.1,0.2l-0.3,0.1c-0.1,0-0.1,0-0.2-0.1L20.7,1.1z">
+                                                    </path>
+                                                    <path fill="#0C2518"
+                                                        d="M21.3,3.3C21.3,3.3,21.3,3.3,21.3,3.3L22,3c0,0,0.1,0,0.1,0.1l0,0c0,0,0,0.1,0,0.1L21.3,3.3C21.3,3.4,21.3,3.4,21.3,3.3L21.3,3.3z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <path fill="#3CBFC5"
+                                                    d="M20.8,7.4l2.6,0.2c0,0,0.1,0.6-0.2,1.5c-0.3,0.8-0.8,1.7-1.4,2.8l-0.4-0.3c0,0,0.5-1.7,0.1-2C21.2,9.2,20.7,8,20.8,7.4z">
+                                                </path>
+                                                <g>
+                                                    <path fill="#3CBFC5"
+                                                        d="M23.1,13.5c0.1-0.7,0.3-1.2,0.5-1.2c0.2,0,0.3,0.6,0.2,1.2c-0.1,0.7-0.3,1.2-0.5,1.2C23.1,14.7,23,14.1,23.1,13.5z">
+                                                    </path>
+                                                    <g>
+                                                        <path fill="#30A5A5"
+                                                            d="M23.1,13.5c-0.1,0.7,0,1.2,0.2,1.2c0,0,0,0,0,0c-0.2-0.1-0.2-0.6-0.1-1.2c0.1-0.6,0.3-1.1,0.5-1.2c0,0,0,0-0.1,0C23.4,12.3,23.2,12.8,23.1,13.5z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                                <path fill="#797A79"
+                                                    d="M21.6,10l2,0.7l0,0c0,0,0.1,0,0.1,0.2c0,0.1,0.1,1.3,0.2,1.9c0,0.3,0.1,0.4,0.1,0.4c0,0,0,0,0,0c0,0.1,0,0.2,0,0.2c0,0-0.1,0-0.1,0l0-0.1c0,0,0.1,0,0.1,0c0,0,0-0.1,0-0.2c0,0,0,0,0,0c0,0,0-0.2-0.1-0.4c-0.1-0.7-0.2-1.8-0.2-1.9c0-0.2-0.1-0.2-0.1-0.2L21.6,10L21.6,10z">
+                                                </path>
+                                                <g>
+                                                    <path fill="#313030"
+                                                        d="M20.7,13.6c0,0.1,0,0.2,0.1,0.2l0.3,0.1c0.1,0,0.1,0,0.2-0.1l0.6-2.2c0-0.1,0-0.2-0.1-0.2l-0.3-0.1c-0.1,0-0.1,0-0.2,0.1L20.7,13.6z">
+                                                    </path>
+                                                    <path fill="#0C2518"
+                                                        d="M21.3,11.4C21.3,11.4,21.3,11.4,21.3,11.4l0.8,0.3c0,0,0.1,0,0.1-0.1l0,0c0,0,0-0.1,0-0.1L21.3,11.4C21.3,11.3,21.3,11.3,21.3,11.4L21.3,11.4z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <ellipse fill="#AEAEAE" cx="21.7" cy="7.5" rx="0.8" ry="1.2"></ellipse>
+                                        <ellipse fill="#30A5A5" cx="21.7" cy="7.5" rx="0.8" ry="1.2"></ellipse>
+                                        <ellipse fill="#FFFFFF" cx="21.5" cy="7.5" rx="0.6" ry="0.9"></ellipse>
+                                    </g>
+                                    <ellipse fill="#3CBFC5" cx="6.8" cy="7.3" rx="6.8" ry="4.9"></ellipse>
+                                    <path fill="#313030"
+                                        d="M2.3,9.1c0,0.6,0.1,1.4,0.7,1.7c1.1,0.8,3.2,0.1,4.4-0.2c1.4-0.3,2.5-0.6,3.8-1c0.7-0.2,1.6-0.4,2.3-0.7c0.5-0.2,1.3-1.1,1.2-1.7c-0.1-0.6-0.7-1.3-1.2-1.5c-0.7-0.3-2.1-0.7-2.8-0.9C9.4,4.3,8.8,4.3,7.4,3.9C6.2,3.6,4.1,2.9,3,3.7C2.5,4.1,2.3,4.9,2.3,5.4c0,0,0,1.4,0,1.9C2.3,7.7,2.3,9.1,2.3,9.1z">
+                                    </path>
+                                    <rect x="0.7" y="0.7"
+                                        transform="matrix(-1 8.978761e-11 -8.978761e-11 -1 2.6242 14.5561)"
+                                        fill="#313030" width="1.3" height="13.1"></rect>
+                                </g>
+                            </defs>
+                            <use xlink:href="#car">
+                                <animateMotion dur="22s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path1"></mpath>
+                                </animateMotion>
+                            </use>
+                            <use xlink:href="#motor">
+                                <animateMotion dur="18s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path2"></mpath>
+                                </animateMotion>
+                            </use>
+                            <use xlink:href="#motor">
+                                <animateMotion dur="18s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path3"></mpath>
+                                </animateMotion>
+                            </use>
+                            <use xlink:href="#car">
+                                <animateMotion dur="15s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path4"></mpath>
+                                </animateMotion>
+                            </use>
+                            <use xlink:href="#car">
+                                <animateMotion dur="12s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path5"></mpath>
+                                </animateMotion>
+                            </use>
+                            <use xlink:href="#motor">
+                                <animateMotion dur="10s" begin="0s" fill="freeze" repeatCount="indefinite"
+                                    rotate="auto">
+                                    <mpath xlink:href="#path6"></mpath>
+                                </animateMotion>
+                            </use>
+                        </svg>
+                        <!-- <img class="imac" src="static/images/background/imac-mockup-maps.png" alt=""> -->
                     </div>
                     <div class="col-sm-6">
                         <div class="media service-box wow fadeInRight">
@@ -338,7 +740,7 @@
             <div class="container">
                 <div class="mu-footer-top-area">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <div class="mu-footer-widget">
                                 <img class="img-responsive logo_footer" src="static/images/logoAB.png" alt="">
                                 <address>
@@ -353,7 +755,7 @@
                                 </address>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <div class="mu-footer-widget">
                                 <h4>Information</h4>
                                 <ul class="footer_ul">
@@ -364,7 +766,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <div class="mu-footer-widget">
                                 <h4>Need Help ? Or More Information</h4>
                                 <div class="title-top">
@@ -372,56 +774,58 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                             <h4 class="social_media">Social Media Please Check This</h4>
                             <div class="body-icon">
-                                <a href="https://www.facebook.com/Ab-pluss-MWM-Group-493213900718178/"
-                                    class="a-icon c-link c-link--facebook c-tooltip" aria-label="Facebook">
-                                    <svg class="c-icon">
-                                        <use xlink:href="#icon--facebook"></use>
-                                    </svg>
-                                </a>
+                                <div class="row">
+                                    <a href="https://www.facebook.com/Ab-pluss-MWM-Group-493213900718178/"
+                                        class="a-icon c-link c-link--facebook c-tooltip" aria-label="Facebook">
+                                        <svg class="c-icon">
+                                            <use xlink:href="#icon--facebook"></use>
+                                        </svg>
+                                    </a>
 
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marketing@abpluss.co.id&su=SUBJECT&body=BODY"
-                                    class="a-icon c-link c-link--google c-tooltip" aria-label="Google+">
-                                    <svg class="c-icon">
-                                        <use xlink:href="#icon--google"></use>
-                                    </svg>
-                                </a>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marketing@abpluss.co.id&su=SUBJECT&body=BODY"
+                                        class="a-icon c-link c-link--google c-tooltip" aria-label="Google+">
+                                        <svg class="c-icon">
+                                            <use xlink:href="#icon--google"></use>
+                                        </svg>
+                                    </a>
 
-                                <a href="https://www.instagram.com/abpluss.advertising/"
-                                    class="a-icon c-link c-link--instagram c-tooltip" aria-label="Instagram">
-                                    <svg class="c-icon">
-                                        <use xlink:href="#icon--instagram"></use>
-                                    </svg>
-                                </a>
+                                    <a href="https://www.instagram.com/abpluss.advertising/"
+                                        class="a-icon c-link c-link--instagram c-tooltip" aria-label="Instagram">
+                                        <svg class="c-icon">
+                                            <use xlink:href="#icon--instagram"></use>
+                                        </svg>
+                                    </a>
 
-                                <a href="https://www.youtube.com/channel/UC0K0YXb9tRHvJ8Rx9YwtXIQ"
-                                    class="a-icon c-link c-link--youtube c-tooltip" aria-label="Youtube">
-                                    <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
-                                    </svg>
-                                </a>
+                                    <a href="https://www.youtube.com/channel/UC0K0YXb9tRHvJ8Rx9YwtXIQ"
+                                        class="a-icon c-link c-link--youtube c-tooltip" aria-label="Youtube">
+                                        <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
+                                        </svg>
+                                    </a>
 
-                                <svg style="display: none">
-                                    <symbol id="icon--facebook" viewBox="0 0 24 24">
-                                        <path
-                                            d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
-                                    </symbol>
-                                    <symbol id="icon--twitter" viewBox="0 0 24 24">
-                                        <path
-                                            d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28,17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
-                                    </symbol>
-                                    <symbol id="icon--google" viewBox="0 0 24 24">
-                                        <path
-                                            d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-                                    </symbol>
-                                    <symbol id="icon--instagram" viewBox="0 0 24 24">
-                                        <path
-                                            d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-                                    </symbol>
-                                </svg>
+                                    <svg style="display: none">
+                                        <symbol id="icon--facebook" viewBox="0 0 24 24">
+                                            <path
+                                                d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+                                        </symbol>
+                                        <symbol id="icon--twitter" viewBox="0 0 24 24">
+                                            <path
+                                                d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28,17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+                                        </symbol>
+                                        <symbol id="icon--google" viewBox="0 0 24 24">
+                                            <path
+                                                d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+                                        </symbol>
+                                        <symbol id="icon--instagram" viewBox="0 0 24 24">
+                                            <path
+                                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                        </symbol>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
