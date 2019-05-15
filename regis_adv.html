@@ -9,29 +9,29 @@
     <meta name="keywords" content="">
     <title>Advertiser ABPluss</title>
     <!-- CSS -->
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/css/button.css" rel="stylesheet">
-    <link href="static/css/loading.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css_notika/css/meanmenu/meanmenu.min.css">
-    <link rel="shortcut icon" style="height: 57px; width: 57px;" href="static/images//logoAB.png">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/button.css" rel="stylesheet">
+    <link href="/static/css/loading.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css_notika/css/meanmenu/meanmenu.min.css">
+    <link rel="shortcut icon" style="height: 57px; width: 57px;" href="/static/images//logoAB.png">
     <!-- notika css
         ============================================ -->
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="static/css_notika/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css_notika/css/bootstrap.min.css">
     <!-- font awesome CSS
 		============================================ -->
-    <link rel="stylesheet" href="static/css_notika/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css_notika/css/animate.css">
-    <link rel="stylesheet" href="static/css_notika/css/scrollbar/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="static/css_notika/css/notika-custom-icon.css">
-    <link rel="stylesheet" href="static/css_notika/css/bootstrap-select/bootstrap-select.css">
-    <link rel="stylesheet" href="static/css_notika/css/main.css">
-    <link rel="stylesheet" href="static/css_notika/style.css">
-    <link rel="stylesheet" href="static/sweat_alert/sweetalert2.min.css">
-    <link rel="stylesheet" href="static/css/click-me.css">
-    <link href="static/css/footer.css" rel=" stylesheet">
-    <!-- <link rel="stylesheet" href="static/sweat_alert/dialog.css"> -->
+    <link rel="stylesheet" href="/static/css_notika/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css_notika/css/animate.css">
+    <link rel="stylesheet" href="/static/css_notika/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/static/css_notika/css/notika-custom-icon.css">
+    <link rel="stylesheet" href="/static/css_notika/css/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="/static/css_notika/css/main.css">
+    <link rel="stylesheet" href="/static/css_notika/style.css">
+    <link rel="stylesheet" href="/static/sweat_alert/sweetalert2.min.css">
+    <link rel="stylesheet" href="/static/css/click-me.css">
+    <link href="/static/css/footer.css" rel=" stylesheet">
+    <!-- <link rel="stylesheet" href="/static/sweat_alert/dialog.css"> -->
     <style>
         #image-preview-picture {
             display: none;
@@ -39,9 +39,9 @@
             height: auto;
         }
     </style>
-    <!-- <link rel="stylesheet" href="static/css_notika/css/responsive.css"> -->
-    <script src="static/js/jquery.js"></script>
-    <script src="static/css_notika/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- <link rel="stylesheet" href="/static/css_notika/css/responsive.css"> -->
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/css_notika/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <!--/head-->
 
@@ -64,7 +64,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="advertiser.html"><img class="logo_img" src="static/images/logoAB.png"
+                    <a class="navbar-brand" href="advertiser.html"><img class="logo_img" src="/static/images/logoAB.png"
                             alt="logo"></a>
                 </div>
 
@@ -212,7 +212,7 @@
                                     Iklan</label>
                                 <img id="image_space" class="image_type_space"
                                     style="margin-left: 10px; height: 150px; width: 190px;"
-                                    src="static/images/space_iklan/full_back_window.jpg" />
+                                    src="/static/images/space_iklan/full_back_window.jpg" />
                             </div>
 
                             <div class="form-group">
@@ -382,18 +382,13 @@
     <!--/#footer-->
 
     <script>
-        // $(document).ready(function () {
-        //     document.querySelector(".third").addEventListener('click', function () {
-        //         swal("Our First Alert", "With some body text and success icon!", "success");
-        //     });
-        // });
         // hidden class space iklan
         var pictureList = [
-            "static/images/space_iklan/full_back_window.jpg",
-            "static/images/space_iklan/full_back_body.jpg",
-            "static/images/space_iklan/full_half_body.jpg",
-            "static/images/space_iklan/half_body.jpg",
-            "static/images/space_iklan/back_body.jpg",
+            "/static/images/space_iklan/full_back_window.jpg",
+            "/static/images/space_iklan/full_back_body.jpg",
+            "/static/images/space_iklan/full_half_body.jpg",
+            "/static/images/space_iklan/half_body.jpg",
+            "/static/images/space_iklan/back_body.jpg",
         ];
 
         $('#lainnya').change(function () {
@@ -405,38 +400,12 @@
 
         });
 
-        // placeholder animasi
-        // var milliseconds = 8000;
-
-        // function writePlaceholder(field, text, i) {
-        //     if (i < (text.length)) {
-        //         $(field).attr("placeholder", text.substring(0, i + 1));
-        //         i++;
-        //         setTimeout(function () {
-        //             writePlaceholder(field, text, i)
-        //         }, 50);
-        //     }
-        // }
-
-        // function init() {
-        //     $(".input_place").each(function () {
-        //         let placeholder = $(this).attr("placeholder");
-        //         writePlaceholder($(this), placeholder, 0);
-
-        //     });
-
-        //     setInterval(function () {
-        //         init()
-        //     }, milliseconds);
-        // }
-
-        // init();
 
         // change image with value in type space
         $('#type_space').change(function () {
             var val = $('#select_type_space').val();
             console.log(val)
-            $('.image_type_space').attr("src", "static/images/space_iklan/" + val + ".jpg");
+            $('.image_type_space').attr("src", "/static/images/space_iklan/" + val + ".jpg");
         });
 
         //check condition after using radio mobil and motor
@@ -445,11 +414,11 @@
                 $("#type_space").addClass("hidden")
                 $("#model_kendaraan").addClass("hidden")
                 // model_kendaraan
-                $("#image_space").attr('src', 'static/images/space_iklan/sample_motor.jpg');
+                $("#image_space").attr('src', '/static/images/space_iklan/sample_motor.jpg');
             }
             if (el == "mobil") {
                 $("#type_space").removeClass("hidden")
-                $("#image_space").attr('src', 'static/images/space_iklan/full_back_window.jpg');
+                $("#image_space").attr('src', '/static/images/space_iklan/full_back_window.jpg');
             }
         }
 
@@ -534,22 +503,22 @@
             };
         };
     </script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/mousescroll.js"></script>
-    <script src="static/js/smoothscroll.js"></script>
-    <script src="static/js/wow.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/mousescroll.js"></script>
+    <script src="/static/js/smoothscroll.js"></script>
+    <script src="/static/js/wow.min.js"></script>
     <!-- JS notika
 		============================================ -->
-    <script src="static/css_notika/js/meanmenu/jquery.meanmenu.js"></script>
-    <script src="static/css_notika/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="static/css_notika/js/icheck/icheck.min.js"></script>
-    <script src="static/css_notika/js/icheck/icheck-active.js"></script>
-    <script src="static/css_notika/js/bootstrap-select/bootstrap-select.js"></script>
-    <script src="static/css_notika/js/plugins.js"></script>
-    <script src="static/css_notika/js/main.js"></script>
-    <script src="static/sweat_alert/sweetalert2.min.js"></script>
-    <script src="static/sweat_alert/dialog-active.js"></script>
-    <!-- <script src="static/sweat_alert/dist/sweetalert2.min.js"></script> -->
+    <script src="/static/css_notika/js/meanmenu/jquery.meanmenu.js"></script>
+    <script src="/static/css_notika/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/static/css_notika/js/icheck/icheck.min.js"></script>
+    <script src="/static/css_notika/js/icheck/icheck-active.js"></script>
+    <script src="/static/css_notika/js/bootstrap-select/bootstrap-select.js"></script>
+    <script src="/static/css_notika/js/plugins.js"></script>
+    <script src="/static/css_notika/js/main.js"></script>
+    <script src="/static/sweat_alert/sweetalert2.min.js"></script>
+    <script src="/static/sweat_alert/dialog-active.js"></script>
+    <!-- <script src="/static/sweat_alert/dist/sweetalert2.min.js"></script> -->
 </body>
 
 </html>
